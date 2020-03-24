@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration Form</title>
+</head>
+<body>
+	<h1>Register</h1>
+	<form>
+		<label for="firstName">First Name:</label>
+		<input type="text" name="firstName" id="firstName" placeholder="John" required>
+		<label for="lastName">Last Name:</label>
+		<input type="text" name="lastName" id="lastName" placeholder="Smith" required>
+		<div>
+			<label for="male">Male</label>
+			<input type="radio" name="sex" id="male" value="male">
+			<label for="female">Female</label>
+			<input type="radio" name="sex" id="female" value="female">
+			<label for="other">Other</label>
+			<input type="radio" name="sex" id="other" value="other">
+		</div>
+		<div>
+			<label for="email">Email:</label>
+			<input type="Email" name="email" placeholder="your email" required>
+			<label for="password">Password:</label>
+			<input type="Password" name="password" minlength="5" maxlength="10" placeholder="password" required>
+			<!-- pattern=".{5,10} required title= " Error Message" -->
+		</div>	
+		<div>
+			<label>
+			Birthday:
+			<select name="month">
+				<option>Month</option>
+				<option value="jan">Jan</option>
+				<option value="feb">Feb</option>
+			</select>
+			<select name="day">
+				<option>Day</option>
+				<option value="1">1</option>
+				<option value="2">2</option>
+			</select>
+			<select name="year">
+				<option>Year</option>
+				<option value="1993">1993</option>
+				<option value="1994">1994</option>
+			</select>
+			</label>			
+		</div>
+		<div>
+			<label for="aggrementBox">I agree to the terms and conditions</label>
+			<input type="checkBox" name="agreement" id="aggrementBox">
+		</div>	
+		<input type="submit">
+	</form>
+</body>
+</html>	
